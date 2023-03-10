@@ -1,0 +1,19 @@
+* SpringBoot - MongoDB.Atlas - MarvelAPI
+
+Aplicación que obtiene los datos de personajes de Marvel directamente desde la API de Marvel y luego te deja obtener información sobre ellos introduciendo sus nombres.
+
+Mi primera aplicación trabajando con Spring, para una entrevista de trabajo.
+
+** Especificaciones
+- la aplicación usa el puerto 8093
+- usa mi cluster de mongo atlas, podría ser conveniente cambiarlo
+
+** Paso 1
+- al iniciar la aplicacion lo primero sera entrar en: localhost:8093/load
+- esa url ejecutara el comando que extrae los personajes de la API de Marvel y los deposita en la base de datos
+
+** Paso 2
+- acceder a: localhost:8093/characters/search
+- allí podras colocar el nombre de algún personaje de Marvel y presionar en search
+- si el personaje existe en la base de datos te mostrara su información
+- si no existe te redirije a notfound
